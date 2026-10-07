@@ -21,8 +21,11 @@
 - 真正切換瀏覽器分頁的端到端測試（程式已有 visibilitychange 暫停處理）；實際失焦另有測試。
 - 真實觀眾評估、主觀聲音質感與全部 150 秒連續聆聽。
 - 真機手機互動、Safari/Firefox、特定 FPS 與低階硬體效能。
-- GitHub Actions 雲端執行及甲方公開網址：尚無遠端 repository，未 push、未部署。
+- GitHub Actions 雲端執行及公開網址的最終狀態，見下方發布紀錄。
 - 完整正式內容、正式音樂、情緒與結局意義均未定案。
 
 ## 靜態設計檢查的限制
 Impeccable 機械檢查因缺少解析套件使用 regex 降級模式，沒有回報問題；不等於完成計算對比度驗收。視覺另檢視桌機與手機截圖。
+
+## 發布紀錄
+2026-10-07：已將原始碼推送至 CamapNorz/music-web-demo 的 main。啟用 GitHub Pages，build_type 為 workflow。首次 workflow 在 Pages 尚未啟用前失敗，啟用後重新執行成功（run 37580638384，網站程式 commit 81f04b7）。雲端語法檢查、8 項單元測試與部署皆通過。公開網址 https://camapnorz.github.io/music-web-demo/ 的 HTML、app.js、state.js、visuals.js、audio.js、style.css 均回應 HTTP 200；HTML 包含正確標題及兩個 Demo 入口。公開網址上的瀏覽器完整互動未重跑，沿用相同程式的本機實測。

@@ -9,10 +9,13 @@
 入口選方向後按「進入體驗」。A 移動游標與停留；B 懸停可抓取形狀，拖曳與放手。暫停、切換分頁或失焦不累積時間；回來按繼續。空白鍵暫停，Escape 暫停。桌機滑鼠為驗收基準；觸控尚未正式驗證。
 
 ## GitHub Pages
-1. 建立 GitHub repository（建議名稱 `between-emotion-demo`）。公開 repository 的 Pages 可公開展示；私人 repository 的 Pages 可用性取決於帳號方案。不要把私密素材放進公開 repository。
-2. 本資料夾已初始化 main 並暫存檔案，但尚未建立 commit。先設定自己的 Git 作者名稱與 email（`git config user.name "你的名稱"`、`git config user.email "你的 email"`），再執行 `git add .`、`git commit -m "Add interactive emotion demos"`、`git remote add origin <repository-url>`、`git push -u origin main`（需先完成 GitHub 登入）。
-3. Repository Settings → Pages → Source 選 GitHub Actions。
-4. Actions 的 Publish demo to GitHub Pages 成功後，從部署結果取得網址。之後 push main 會自動更新。
+已推送至公開 repository，並啟用 GitHub Actions 作為 Pages 發布來源。
+
+- 原始碼：https://github.com/CamapNorz/music-web-demo
+- 展示網址：https://camapnorz.github.io/music-web-demo/
+- 發布結果：https://github.com/CamapNorz/music-web-demo/actions
+
+後續修改完成後，執行 `npm run check`、`npm test`，再 `git add <修改的檔案>`、`git commit -m "Describe changes"`、`git push`。main 的更新會自動觸發測試與部署。
 
 遠端 repository：https://github.com/CamapNorz/music-web-demo 。部署網址與實際驗證狀態以 TEST-REPORT.md 為準。
 
